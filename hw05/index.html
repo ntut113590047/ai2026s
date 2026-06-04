@@ -13,7 +13,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<title>作業五</title>
+<title>作業五
+</title>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
 <link rel="icon" href="../hw00/favicon.svg"/>
 <style type="text/css">
@@ -153,7 +154,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這一次作業五的內容是完成 ComfyUI 的建置，並且使用 ComfyUI 替換模型完成芙莉蓮、欣梅爾文生圖，我覺得這一次的作業內容非常有趣，能夠根據不同模型生成不同風格的圖像，讓我對於 Stable Diffusion 的運作有了更深入的理解。
     </div>
   </div>
 
@@ -169,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,18 +195,61 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ComfyUI.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#ff0000;"> 
+      <figure>
+        <figcaption>完成芙莉蓮、欣梅爾Checkpoint文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl?modelVersionId=1494740">Checkpoint連結</a>
+        <p>1024 * 1280</p>
+        <p>very awa, anime screencap, masterpiece,best quality,1boy, 1girl, 
+          frieren, himmel \(sousou no frieren\), outdoors, upper body, eye contact, light blue hair, 
+          cape, capelet, earrings, night, hand on another&#039;s head, kesyeru, sousou no frieren, 
+          &lt;,
+        </p>
+        <p>nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,
+          low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,
+        </p>
+        <img src="img1.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#7030a0;">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成芙莉蓮、欣梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl?modelVersionId=1494740">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1204563/ma1ma1helmes-or-shiiros-styles-or-niji?modelVersionId=1356500">LoRA連結</a>
+        <br>
+        <p>1024 * 1280</p>
+        <p>LoRA1 Strength : 0.2</p>
+        <p>LoRA2 Strength : 0.2</p>
+        <p>r17329_illu, xxx667_illu, very awa, anime screencap, masterpiece,best quality,1boy, 1girl, 
+          frieren, himmel \(sousou no frieren\), outdoors, upper body, eye contact, light blue hair, 
+          cape, capelet, earrings, night, hand on another&#039;s head, kesyeru, sousou no frieren, 
+          &lt;lora:r17329_illu-000015:0.45&gt;, &lt;lora:XXX477-000016:0.5&gt;,
+        </p>
+        <p>nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,
+          low quality,normal quality,jpeg artifacts,signature,watermark,username,blurry,artist name,
+        </p>
+        <img src="img2.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
@@ -252,4 +296,3 @@
 
 </body>
 </html>
-
